@@ -32,10 +32,11 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
          * @see \wcf\system\menu\user\profile\content\IUserProfileMenuContent::getContent()
          */
         public function getContent($userID) {
-            $sql = "SELECT * FROM wcf".WCF_N."_user_iplog
+            $sql = "SELECT userID, ipAddress, timestamp FROM wcf".WCF_N."_user_iplog
                     WHERE
                             userID = ?
-                    ORDER BY entryID ASC
+                    GROUP BY userID, ipAddress, timestamp
+                    ORDER BY entryID DESC
                     LIMIT 0,".$this->maxIpAddresses;
     
             $statement = WCF::getDB()->prepareStatement($sql);
