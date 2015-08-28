@@ -5,13 +5,18 @@
 	</category>
     
 	<category name="wcf.user">
-		<item name="wcf.user.iplog.general.ipaddress"><![CDATA[IP Address]]></item>
+		<item name="wcf.user.iplog.general.ipaddress"><![CDATA[IP-Address]]></item>
         <item name="wcf.user.iplog.general.date"><![CDATA[Date]]></item>
-		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Last <span class="badge">{$maxIpAddresses}</span> IP Addresses]]></item>
+		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Last <span class="badge">{$maxIpAddresses}</span> IP-Addresses]]></item>
 	</category>
 
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.mod.iplog"><![CDATA[User IP-Log]]></item>
-		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[User can view IP Log history entries on profile pages.]]></item>
+		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[User can view IP-Log history entries on profile pages.]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.iplog"><![CDATA[User IP-Log]]></item>
+		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Amount of the last IP Log entries on profile pages]]></item>
 	</category>
 </language>

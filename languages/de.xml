@@ -14,4 +14,9 @@
 		<item name="wcf.acp.group.option.category.mod.iplog"><![CDATA[Benutzer IP-Log]]></item>
 		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[Benutzer kann IP-Log History auf Profilen ansehen.]]></item>
 	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.category.user.iplog"><![CDATA[Benutzer IP-Log]]></item>
+		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Anzahl der letzten IP-Log Einträge auf Profilseiten]]></item>
+	</category>
 </language>

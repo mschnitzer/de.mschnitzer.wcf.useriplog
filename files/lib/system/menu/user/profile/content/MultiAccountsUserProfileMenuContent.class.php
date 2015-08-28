@@ -21,7 +21,7 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
         /**
          * The maximum of listed ip addresses
          */
-        public $maxIpAddresses = 5;
+        public $maxIpAddresses = IPLOG_MAX_PROFILE_IP_ENTRIES;
         
         /**
          * The user ip address list with $maxIpAddresses entries
