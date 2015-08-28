@@ -4,12 +4,9 @@
 		<item name="wcf.user.profile.menu.multiAccounts"><![CDATA[Multiaccounts]]></item>
 	</category>
     
-	<category name="wcf.user.iplog.general">
+	<category name="wcf.user">
 		<item name="wcf.user.iplog.general.ipaddress"><![CDATA[IP-Adresse]]></item>
         <item name="wcf.user.iplog.general.date"><![CDATA[Datum]]></item>
-	</category>
-    
-	<category name="wcf.user.iplog.profile">
 		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Letzte <span class="badge">{$maxIpAddresses}</span> IP-Adressen]]></item>
 	</category>
 </language>
