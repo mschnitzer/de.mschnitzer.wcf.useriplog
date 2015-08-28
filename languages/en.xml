@@ -9,4 +9,9 @@
         <item name="wcf.user.iplog.general.date"><![CDATA[Date]]></item>
 		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Last <span class="badge">{$maxIpAddresses}</span> IP Addresses]]></item>
 	</category>
+
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.mod.iplog"><![CDATA[User IP-Log]]></item>
+		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[User can view IP Log history entries on profile pages.]]></item>
+	</category>
 </language>

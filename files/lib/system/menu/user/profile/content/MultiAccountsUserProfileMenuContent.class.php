@@ -27,6 +27,11 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
          * The user ip address list with $maxIpAddresses entries
          */
         public $ipAddressList = array();
+
+        /**
+         * If the user should see the menu item, the value should be "true"
+         */
+        protected $visible = false;
         
         /**
          * @see \wcf\system\menu\user\profile\content\IUserProfileMenuContent::getContent()
@@ -66,6 +71,11 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
          * @see \wcf\system\menu\user\profile\content\IUserProfileMenuContent::isVisible()
          */
         public function isVisible($userID) {
-            return true;
+            if (WCF::getSession()->getPermission('mod.iplog.canSeeIPHistory')) {
+                $this->visible = true;
+                return $this->visible;
+            }
+
+            return $this->visible;
         }
 }
