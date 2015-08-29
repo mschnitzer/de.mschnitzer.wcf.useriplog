@@ -34,6 +34,6 @@ es liegt ein Verdacht auf Multiaccount beim Benutzer {$username} vor.
 
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.user.iplog"><![CDATA[Benutzer IP-Log]]></item>
-		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Anzahl der letzten IP-Log Einträge auf Profilseiten]]></item>
+		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Maximale Anzahl der &laquo; &laquo; Letzte IP-Adressen &laquo; Einträge auf Profilseiten]]></item>
 	</category>
 </language>
