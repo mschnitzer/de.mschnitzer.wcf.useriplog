@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
 	<category name="wcf.user.profile">
-		<item name="wcf.user.profile.menu.multiAccounts"><![CDATA[Multiaccounts]]></item>
+		<item name="wcf.user.profile.menu.iplog"><![CDATA[IP-Log]]></item>
 	</category>
     
 	<category name="wcf.user">
 		<item name="wcf.user.iplog.general.ipaddress"><![CDATA[IP-Adresse]]></item>
         <item name="wcf.user.iplog.general.date"><![CDATA[Datum]]></item>
+        <item name="wcf.user.iplog.general.multiaccount"><![CDATA[Multiaccount]]></item>
 		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Letzte <span class="badge">{$maxIpAddresses}</span> IP-Adressen]]></item>
+		<item name="wcf.user.iplog.profile.multiaccounts"><![CDATA[Multiaccounts <span class="badge">{$multiaccountEntries}</span>]]></item>
 	</category>
 
 	<category name="wcf.iplog">
 		<item name="wcf.iplog.messages.userNoIPs"><![CDATA[Es wurden aktuell noch keine IP-Adressen für den Benutzer &raquo; {$username} &laquo; gespeichert.]]></item>
+		<item name="wcf.iplog.messages.userNoMultiAccounts"><![CDATA[Der Benutzer &raquo; {$username} &laquo; besitzt keine Multiaccounts.]]></item>
 		<item name="wcf.iplog.messages.newMultiAccount.title"><![CDATA[Neuer Multiaccount Verdacht]]></item>
 		<item name="wcf.iplog.messages.newMultiAccount.text"><![CDATA[Hallo [b]{$admin}[/b],
 
@@ -24,6 +27,7 @@ es liegt ein Verdacht auf Multiaccount beim Benutzer {$username} vor.
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.mod.iplog"><![CDATA[Benutzer IP-Log]]></item>
 		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[Benutzer dieser Gruppe können IP-Log History auf Profilen ansehen.]]></item>
+		<item name="wcf.acp.group.option.mod.iplog.canSeeMultiAccounts"><![CDATA[Benutzer dieser Gruppe können Multiaccounts auf Profilen sehen.]]></item>
 		<item name="wcf.acp.group.option.category.mod.iplog.notifications"><![CDATA[Benachrichtigungen]]></item>
 		<item name="wcf.acp.group.option.mod.iplog.notifications.receiveMultiaccountNotification"><![CDATA[Benutzer erhalten eine Benachrichtigung bei neuen Multiaccounts.]]></item>
 	</category>

@@ -1,6 +1,6 @@
 .PHONY: all
 
-TPLFILES := userProfileMultiAccounts.tpl
+TPLFILES := userProfileIPLog.tpl
 
 all: release
 	tar -C files/ -vcf files.tar lib
