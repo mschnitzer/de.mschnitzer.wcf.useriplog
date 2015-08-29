@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/option.xsd">
+	<import>
+		<categories>
+			<category name="user.iplog">
+				<parent>user</parent>
+			</category>
+		</categories>
+
+		<options>
+			<option name="iplog_max_profile_ip_entries">
+				<categoryname>user.iplog</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>5</defaultvalue>
+				<maxvalue>15</maxvalue>
+				<minvalue>1</minvalue>
+			</option>
+		</options>
+	</import>
+</data>
