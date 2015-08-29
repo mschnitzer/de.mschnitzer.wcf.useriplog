@@ -12,6 +12,13 @@
 
 	<category name="wcf.iplog">
 		<item name="wcf.iplog.messages.userNoIPs"><![CDATA[There are currently no IP-Address entries for &raquo; {$username} &laquo;]]></item>
+		<item name="wcf.iplog.messages.newMultiAccount.title"><![CDATA[New possible multi account]]></item>
+		<item name="wcf.iplog.messages.newMultiAccount.text"><![CDATA[Hello {$admin},
+
+a possible multi account has been detected for user {$username}.
+
+[b]Accounts with that IP-Address: {$ip}[/b]
+{$accounts}]]></item>
 	</category>
 
 	<category name="wcf.acp.group">

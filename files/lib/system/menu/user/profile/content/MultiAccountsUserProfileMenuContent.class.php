@@ -29,6 +29,11 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
         public $ipAddressList = array();
 
         /**
+         * An array with all multi accounts associated to that account
+         */
+        public $multiaccounts = array();
+
+        /**
          * If the user should see the menu item, the value should be "true"
          */
         protected $visible = false;
