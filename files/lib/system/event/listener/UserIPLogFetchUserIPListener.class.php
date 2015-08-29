@@ -1,5 +1,6 @@
 <?php
  namespace wcf\system\event\listener;
+ use wcf\system\event\EventHandler;
  use wcf\system\event\IEventListener;
  use wcf\system\WCF;
  use wcf\util\UserUtil;
@@ -50,6 +51,9 @@
 				UserUtil::getUserAgent(),
 				TIME_NOW
 			));
+
+			// fire event for the multi account checker
+			EventHandler::getInstance()->fireAction($this, 'newIP');
 		}
 		
 		return 1;

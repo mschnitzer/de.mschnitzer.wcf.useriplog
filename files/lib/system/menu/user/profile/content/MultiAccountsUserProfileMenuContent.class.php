@@ -57,11 +57,21 @@ class MultiAccountsUserProfileMenuContent extends SingletonFactory implements IU
                 $this->ipAddressList[$i]['ipAddress'] = UserUtil::convertIPv6To4($this->ipAddressList[$i]['ipAddress']);
                 $i++;
             }
+
+            $sql = "SELECT username FROM wcf".WCF_N."_user
+                    WHERE userID = ?";
+            $statement = WCF::getDB()->prepareStatement($sql);
+            $statement->execute(array($userID));
+
+            $row = $statement->fetchArray();
+            $username = $row['username'];
             
             WCF::getTPL()->assign(array(
                 'ipAddressList' => $this->ipAddressList,
+                'ipAddressEntries' => count($this->ipAddressList),
                 'maxIpAddresses' => $this->maxIpAddresses,
                 'userID' => $userID,
+                'username' => $username
             ));
     
             return WCF::getTPL()->fetch('userProfileMultiAccounts');

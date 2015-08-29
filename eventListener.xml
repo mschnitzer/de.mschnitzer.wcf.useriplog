@@ -8,5 +8,13 @@
             <inherit>1</inherit>
             <environment>user</environment>
         </eventlistener>
+
+        <eventlistener>
+            <eventclassname>wcf\system\event\listener\UserIPLogFetchUserIPListener</eventclassname>
+            <eventname>newIP</eventname>
+            <listenerclassname>wcf\system\event\listener\UserIPLogMultiAccountCheckerListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>user</environment>
+        </eventlistener>
     </import>
 </data>

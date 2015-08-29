@@ -10,9 +10,15 @@
 		<item name="wcf.user.iplog.profile.lastips"><![CDATA[Last <span class="badge">{$maxIpAddresses}</span> IP-Addresses]]></item>
 	</category>
 
+	<category name="wcf.iplog">
+		<item name="wcf.iplog.messages.userNoIPs"><![CDATA[There are currently no IP-Address entries for &raquo; {$username} &laquo;]]></item>
+	</category>
+
 	<category name="wcf.acp.group">
 		<item name="wcf.acp.group.option.category.mod.iplog"><![CDATA[User IP-Log]]></item>
-		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[User can view IP-Log history entries on profile pages.]]></item>
+		<item name="wcf.acp.group.option.mod.iplog.canSeeIPHistory"><![CDATA[User of this group can view IP-Log history entries on profile pages.]]></item>
+		<item name="wcf.acp.group.option.category.mod.iplog.notifications"><![CDATA[Notifications]]></item>
+		<item name="wcf.acp.group.option.mod.iplog.notifications.receiveMultiaccountNotification"><![CDATA[Users will receive a notification by new multi accounts.]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
