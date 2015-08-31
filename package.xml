@@ -5,8 +5,8 @@
 		<packagename language="de">Benutzer IP-Log</packagename>
 		<packagedescription>A user IP log plugin for WCF 2.</packagedescription>
 		<packagedescription language="de">Ein Benutzer IP-Log Plugin für WCF 2.</packagedescription>
-		<version>1.0.0 Alpha 2</version>
-		<date>2015-08-31</date>
+		<version>1.0.0 Alpha 3</version>
+		<date>2015-09-01</date>
 	</packageinformation>
 
 	<authorinformation>

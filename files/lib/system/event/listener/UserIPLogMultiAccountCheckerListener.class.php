@@ -1,11 +1,12 @@
 <?php
  namespace wcf\system\event\listener;
- use wcf\system\event\IEventListener;
- use wcf\system\WCF;
- use wcf\system\user\storage\UserStorageHandler;
- use wcf\util\UserUtil;
- use wcf\system\message\quote\MessageQuoteManager;
  use wcf\data\conversation\ConversationAction;
+ use wcf\system\event\IEventListener;
+ use wcf\system\message\quote\MessageQuoteManager;
+ use wcf\system\request\LinkHandler;
+ use wcf\system\user\storage\UserStorageHandler;
+ use wcf\system\WCF;
+ use wcf\util\UserUtil;
 
  
  /**
@@ -104,7 +105,8 @@
 				$accountlist = "[list]";
 
 				foreach ($multiaccounts as $m) {
-					$accountlist .= "[*] ".$m['username'];
+					$profilelink = LinkHandler::getInstance()->getLink('User', array('id' => $m['userID']));
+					$accountlist .= "[*] [url='".$profilelink."']".$m['username']."[/url]";
 				}
 
 				$accountlist .= "[/list]";
@@ -121,6 +123,7 @@
 					$message = WCF::getLanguage()->getDynamicVariable('wcf.iplog.messages.newMultiAccount.text', array(
 						'admin' => $username,
 						'username' => WCF::getUser()->username,
+						'userlink' => LinkHandler::getInstance()->getLink('User', array('id' => WCF::getUser()->userID)),
 						'ip' => UserUtil::convertIPv6To4(UserUtil::getIpAddress()),
 						'accounts' => $accountlist,
 					));
