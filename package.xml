@@ -6,7 +6,7 @@
 		<packagedescription>A user IP log plugin for WCF 2.</packagedescription>
 		<packagedescription language="de">Ein Benutzer IP-Log Plugin für WCF 2.</packagedescription>
 		<version>1.0.0 Alpha 2</version>
-		<date>2015-08-29</date>
+		<date>2015-08-31</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -17,6 +17,7 @@
 	<requiredpackages>
 		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
 		<requiredpackage minversion="4.0.0 Alpha 1">com.woltlab.wbb</requiredpackage>
+		<requiredpackage minversion="2.0.0">com.woltlab.wcf.conversation</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
@@ -28,5 +29,9 @@
 		<instruction type="option">option.xml</instruction>
 		<instruction type="sql">install.sql</instruction>
 		<instruction type="language">languages/*.xml</instruction>
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0 Alpha 1">
+		<instruction type="file">updates/100alpha2/files.tar</instruction>
 	</instructions>
 </package>
