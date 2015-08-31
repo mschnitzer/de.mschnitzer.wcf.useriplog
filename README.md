@@ -8,3 +8,5 @@ A user ip log plugin for WCF2 &amp; WBB 4.
 [![screenshot-2.png](https://www.fast-images.de/uploads/e455db7adddb2dbc0815.png)](https://www.fast-images.de/uploads/e455db7adddb2dbc0815.png)
 ##### Screenshot 3
 [![screenshot-3.png](https://www.fast-images.de/uploads/2a7cecfcdc9528a2ddbc.png)](https://www.fast-images.de/uploads/2a7cecfcdc9528a2ddbc.png)
+##### Screenshot 4
+[![screenshot-4.png](https://www.fast-images.de/uploads/78f93b046a3060bc38aa.png)](https://www.fast-images.de/uploads/78f93b046a3060bc38aa.png)
