@@ -9,6 +9,10 @@
 			<category name="mod.iplog.notifications">
 				<parent>mod.iplog</parent>
 			</category>
+			
+			<category name="admin.user.iplog">
+				<parent>admin.user</parent>
+			</category>
 		</categories>
 
 		<options>
@@ -33,6 +37,14 @@
 				<optiontype>boolean</optiontype>
 				<defaultvalue>0</defaultvalue>
 				<moddefaultvalue>1</moddefaultvalue>
+				<usersonly>1</usersonly>
+			</option>
+			
+			<option name="admin.user.iplog.canSeeMultiaccounts">
+				<categoryname>admin.user.iplog</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<admindefaultvalue>1</admindefaultvalue>
 				<usersonly>1</usersonly>
 			</option>
 		</options>

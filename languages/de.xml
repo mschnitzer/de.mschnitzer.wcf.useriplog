@@ -30,10 +30,16 @@ es liegt ein Verdacht auf Multiaccount beim Benutzer [url='{$userlink}']{$userna
 		<item name="wcf.acp.group.option.mod.iplog.canSeeMultiAccounts"><![CDATA[Benutzer dieser Gruppe können Multiaccounts auf Profilen sehen.]]></item>
 		<item name="wcf.acp.group.option.category.mod.iplog.notifications"><![CDATA[Benachrichtigungen]]></item>
 		<item name="wcf.acp.group.option.mod.iplog.notifications.receiveMultiaccountNotification"><![CDATA[Benutzer erhalten eine Benachrichtigung bei neuen Multiaccounts.]]></item>
+		<item name="wcf.acp.group.option.category.admin.user.iplog"><![CDATA[Benutzer IP-Log]]></item>
+		<item name="wcf.acp.group.option.admin.user.iplog.canSeeMultiaccounts"><![CDATA[Benutzer dieser Gruppe können Multiaccounts auflisten und suchen.]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.user.iplog"><![CDATA[Benutzer IP-Log]]></item>
 		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Maximale Anzahl der &laquo; &laquo; Letzte IP-Adressen &laquo; Einträge auf Profilseiten]]></item>
+	</category>
+	
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.iplog.multiaccounts"><![CDATA[Multiaccounts auflisten]]></item>
 	</category>
 </language>

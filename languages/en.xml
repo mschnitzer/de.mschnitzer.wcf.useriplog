@@ -30,10 +30,16 @@ a possible multi account has been detected for user [url='{$userlink}']{$usernam
 		<item name="wcf.acp.group.option.mod.iplog.canSeeMultiAccounts"><![CDATA[User of this group can view multi accounts on user profiles.]]></item>
 		<item name="wcf.acp.group.option.category.mod.iplog.notifications"><![CDATA[Notifications]]></item>
 		<item name="wcf.acp.group.option.mod.iplog.notifications.receiveMultiaccountNotification"><![CDATA[Users will receive a notification by new multi accounts.]]></item>
+		<item name="wcf.acp.group.option.category.admin.user.iplog"><![CDATA[User IP-Log]]></item>
+		<item name="wcf.acp.group.option.admin.user.iplog.canSeeMultiaccounts"><![CDATA[Users of this group can search and view multi accounts.]]></item>
 	</category>
 
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.category.user.iplog"><![CDATA[User IP-Log]]></item>
 		<item name="wcf.acp.option.iplog_max_profile_ip_entries"><![CDATA[Number of the maximum &raquo; Last IP-Addresses &laquo; entries on profile pages]]></item>
+	</category>
+	
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.iplog.multiaccounts"><![CDATA[List Multiaccounts]]></item>
 	</category>
 </language>
