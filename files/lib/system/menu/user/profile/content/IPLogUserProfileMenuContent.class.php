@@ -1,6 +1,6 @@
 <?php
 namespace wcf\system\menu\user\profile\content;
-use wcf\data\user\User;
+use wcf\data\user\UserProfile;
 use wcf\system\option\user\UserOptionHandler;
 use wcf\system\SingletonFactory;
 use wcf\system\WCF;
@@ -93,17 +93,9 @@ class IPLogUserProfileMenuContent extends SingletonFactory implements IUserProfi
                         $maID = $row['userID'];
                     }
 
-                    // fetch username of multi account
-                    $sql = "SELECT username FROM wcf".WCF_N."_user
-                            WHERE userID = ?";
-                    $_statement = WCF::getDB()->prepareStatement($sql);
-                    $_statement->execute(array($maID));
-
-                    $_row = $_statement->fetchArray();
-
+                    // fetch user data
                     $this->multiaccounts[] = array(
-                        'userID' => $maID,
-                        'username' => $_row['username'],
+                        'user' => UserProfile::getUserProfile($maID),
                         'ipAddress' => UserUtil::convertIPv6To4($row['ipAddress']),
                         'timestamp' => $row['timestamp'],
                     );

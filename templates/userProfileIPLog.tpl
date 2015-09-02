@@ -40,6 +40,7 @@
 		<table class="table">
 			<thead>
 				<tr>
+					<th class="columnAvatar" style="width:32px;"></th>
 					<th class="columnMultiaccount">{lang}wcf.user.iplog.general.multiaccount{/lang}</th>
 					<th class="columnIpAddress">{lang}wcf.user.iplog.general.ipaddress{/lang}</th>
 					<th class="columnDate">{lang}wcf.user.iplog.general.date{/lang}</th>
@@ -48,7 +49,12 @@
 			<tbody>
 	            {foreach from=$multiaccounts item='ma'}
 				<tr>
-					<td class="columnMultiaccount"><a href="{link controller='User' id=$ma['userID'] title=$ma['username']}{/link}" class="userLink" data-user-id="{$ma['userID']}">{$ma['username']}</a></td>
+					<td class="columnAvatar"><span class="framed">{@$ma['user']->getAvatar()->getImageTag(32)}</span></td>
+					<td class="columnMultiaccount">
+						<a href="{link controller='User' id=$ma['user']->userID title=$ma['user']->username}{/link}" class="userLink" data-user-id="{$ma['user']->userID}">
+							{$ma['user']->username}
+						</a>
+					</td>
 					<td class="columnIpAddress">{$ma['ipAddress']}</td>
 	                <td class="columnDate">{$ma['timestamp']|date}</td>
 				</tr>
